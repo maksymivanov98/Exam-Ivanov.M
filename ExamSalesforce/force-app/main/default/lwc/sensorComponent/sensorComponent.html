@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Sensor">
+        <lightning-datatable 
+             key-field="id"         
+             data={SensorList}                  
+             columns={columns}  
+             hide-checkbox-column="true"                                  
+             onrowaction={handleRowAction}> 
+        </lightning-datatable>
+    </lightning-card>
+
+    <lightning-card title="Terminal buttons">
+        <lightning-button slot="actions" label="View Sensor" onclick={viewRecord}></lightning-button>
+    </lightning-card>
+</template>
