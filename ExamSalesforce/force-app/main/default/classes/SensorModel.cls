@@ -5,7 +5,7 @@ global class SensorModel {
 	public class Vector {
 	    public Integer x;
 	    public Integer y;
-		public Integer z;
+	    public Integer z;
 	}
     
     public static SensorModel parse(String json) {
